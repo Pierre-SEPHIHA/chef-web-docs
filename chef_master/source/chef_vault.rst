@@ -4,6 +4,7 @@
 `[edit on GitHub] <https://github.com/chef/chef-web-docs/blob/master/chef_master/source/chef_vault.rst>`__
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``chef-vault`` is a RubyGems package that is included in the Chef development kit. ``chef-vault`` allows the encryption of a data bag item by using the public keys of a list of nodes, allowing only those nodes to decrypt the encrypted values. ``chef-vault`` uses the ``knife vault`` subcommand. 
 =======
 
@@ -12,6 +13,11 @@
 >>>>>>> Tables and formatting
 
 .. note:: ``chef-vault`` does not currently support alternate keying mechanisms like GPG and Amazon KMS. 
+=======
+``chef-vault`` is a RubyGems package that is included in the Chef development kit. ``chef-vault`` allows the encryption of a data bag item by using the public keys of a list of nodes, allowing only those nodes to decrypt the encrypted values. ``chef-vault`` uses the ``knife vault`` subcommand.
+
+.. note:: ``chef-vault`` does not currently support alternate keying mechanisms like GPG and Amazon KMS.
+>>>>>>> fixes whitespace errors
 
 * For more information about using the ``chef-vault`` cookbook, its helper methods and resources, see https://github.com/chef-cookbooks/chef-vault
 
@@ -61,8 +67,12 @@ To set the default list of admins for creating and updating vaults, add the foll
 (These values can be overridden on the command line by using ``-A``)
 
 Syntax
+<<<<<<< HEAD
 =====================================================
 The syntax for ``knife vault`` commands is: 
+=======
+The syntax for ``knife vault`` commands is:
+>>>>>>> fixes whitespace errors
 
 .. code-block:: shell
    
@@ -70,7 +80,7 @@ The syntax for ``knife vault`` commands is:
 
 where:
 
-* ``vault`` names the location for storing the encrypted item.  
+* ``vault`` names the location for storing the encrypted item.
 * ``item`` names the item stored the vault. 
 * ``values`` contains the data that will be encrypted and stored in the vault.
 
@@ -513,52 +523,52 @@ Global Options
      - Valid Values
      - Sub-Commands
    * - ``-M``, ``MODE``
-     - ``--mode MODE`` 
+     - ``--mode MODE``
      - Chef mode to run in. Can be set in knife.rb 
-     - ``solo`` 
+     - ``solo``
      - ``solo``, ``client`` 
      - all
-   * - ``-S`` ``SEARCH`` 
+   * - ``-S`` ``SEARCH``
      - ``--search SEARCH``
-     - Chef Server SOLR Search Of Nodes 
+     - Chef Server SOLR Search Of Nodes
      - none
      - none
      - ``create``, ``remove`` , ``update``
-   * - ``-A`` ``ADMINS`` 
+   * - ``-A`` ``ADMINS``
      - ``--admins ADMINS``
      - Chef clients or users to be vault admins, can be comma list
      - none
      - none
      - ``create``, ``remove`` , ``update``
-   * - ``-J`` ``FILE`` 
-     - ``--json FILE`` 
+   * - ``-J`` ``FILE``
+     - ``--json FILE``
      - JSON file to be used for values, will be merged with VALUES if VALUES is passed
      - none
      - none
      - ``create``, ``update``
    * - ``--file`` ``FILE``
-     - none 
+     - none
      - File that chef-vault should encrypt. It adds "file-content" & "file-name" keys to the vault item
      - none
      - none
      - ``create``, ``update``
-   * - ``-p`` ``DATA`` 
-     - ``--print DATA`` 
+   * - ``-p`` ``DATA``
+     - ``--print DATA``
      - Print extra vault data
      - none
-     - ``search``, ``clients``, ``admins``, ``all`` 
+     - ``search``, ``clients``, ``admins``, ``all``
      - ``show``
-   * - ``-F`` ``FORMAT`` 
+   * - ``-F`` ``FORMAT``
      - ``--format FORMAT``
      - Format for decrypted output
      - summary
-     - ``summary``, ``json``, ``yaml``, ``pp`` 
+     - ``summary``, ``json``, ``yaml``, ``pp``
      - ``show``
    * - --clean-unknown-clients
      - none
      - Remove unknown clients during key rotation
      - none
-     - none 
+     - none
      - ``refresh``, ``remove``, ``rotate``
 
 Options for knife bootstrap
