@@ -55,6 +55,7 @@ To set the default list of admins for creating and updating vaults, add the foll
 (These values can be overridden on the command line by using ``-A``)
 
 Syntax
+--------------------------------------
 
 .. code-block:: shell
    
