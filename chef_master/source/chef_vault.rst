@@ -3,21 +3,9 @@
 =====================================================
 `[edit on GitHub] <https://github.com/chef/chef-web-docs/blob/master/chef_master/source/chef_vault.rst>`__
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ``chef-vault`` is a RubyGems package that is included in the Chef development kit. ``chef-vault`` allows the encryption of a data bag item by using the public keys of a list of nodes, allowing only those nodes to decrypt the encrypted values. ``chef-vault`` uses the ``knife vault`` subcommand. 
-=======
-
-``chef-vault`` is a RubyGems package that is included in the Chef development kit. ``chef-vault`` allows the encryption of a data bag item by using the public keys of a list of nodes, allowing only those nodes to decrypt the encrypted values. ``chef-vault`` uses the ``knife vault`` subcommand. 
-
->>>>>>> Tables and formatting
 
 .. note:: ``chef-vault`` does not currently support alternate keying mechanisms like GPG and Amazon KMS. 
-=======
-``chef-vault`` is a RubyGems package that is included in the Chef development kit. ``chef-vault`` allows the encryption of a data bag item by using the public keys of a list of nodes, allowing only those nodes to decrypt the encrypted values. ``chef-vault`` uses the ``knife vault`` subcommand.
-
-.. note:: ``chef-vault`` does not currently support alternate keying mechanisms like GPG and Amazon KMS.
->>>>>>> fixes whitespace errors
 
 * For more information about using the ``chef-vault`` cookbook, its helper methods and resources, see https://github.com/chef-cookbooks/chef-vault
 
@@ -67,12 +55,6 @@ To set the default list of admins for creating and updating vaults, add the foll
 (These values can be overridden on the command line by using ``-A``)
 
 Syntax
-<<<<<<< HEAD
-=====================================================
-The syntax for ``knife vault`` commands is: 
-=======
-The syntax for ``knife vault`` commands is:
->>>>>>> fixes whitespace errors
 
 .. code-block:: shell
    
